@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#195f39">
+  <meta name="description" content="Muestreo y monitoreo de pH por finca y lote">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="./icons/icon.svg">
+  <link rel="stylesheet" href="./assets/css/app.css">
+  <title>pH Cultivos · Fase 1</title>
+</head>
+<body>
+  <a class="skip-link" href="#app">Saltar al contenido</a>
+  <div class="app-shell">
+    <header class="app-header">
+      <button id="backButton" class="icon-button" type="button" aria-label="Volver">‹</button>
+      <a class="brand" href="#/home" aria-label="pH Cultivos, inicio">
+        <span class="brand-mark">pH</span>
+        <span><strong>pH Cultivos</strong><small>Fase 1 · datos ficticios</small></span>
+      </a>
+      <button id="networkButton" class="network-button" type="button" aria-label="Ver sincronización">
+        <span class="network-dot"></span><span id="networkLabel">En línea</span>
+      </button>
+    </header>
+    <main id="app" tabindex="-1"></main>
+    <nav id="bottomNav" class="bottom-nav" aria-label="Navegación principal">
+      <a href="#/home" data-nav="home"><span aria-hidden="true">⌂</span><small>Inicio</small></a>
+      <a href="#/quick" data-nav="quick"><span aria-hidden="true">pH</span><small>Medir</small></a>
+      <a href="#/farms" data-nav="farms"><span aria-hidden="true">⌑</span><small>Fincas</small></a>
+      <a href="#/sync" data-nav="sync"><span aria-hidden="true">↻</span><small>Sincronizar</small></a>
+    </nav>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="./assets/js/app.js"></script>
+</body>
+</html>

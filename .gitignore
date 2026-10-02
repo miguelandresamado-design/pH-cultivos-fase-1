@@ -1,0 +1,5 @@
+.DS_Store
+config/app.js
+coverage/
+node_modules/
+*.log
